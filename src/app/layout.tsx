@@ -1,3 +1,5 @@
+import Header from "./components/Header";
+
 export const metadata = {
   title: "Antoine Fouga",
   description: "Entrainement next.js",
@@ -17,7 +19,7 @@ export default function RootLayout({
             padding: "2rem",
           }}
         >
-          <p style={{ color: "white" }}>Mon header</p>
+          <Header />
         </header>
 
         <main
