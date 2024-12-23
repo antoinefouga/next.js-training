@@ -19,3 +19,13 @@ export async function PATCH(
   cards[index].title = title;
   return Response.json(cards[index].title);
 }
+
+export async function DELETE(
+  request: Request,
+  { params }: { params: { id: string } }
+) {
+  const index = cards.findIndex((card) => card.id === parseInt(params.id));
+  const deleteCard = cards[index];
+  cards.splice(index, 1);
+  return Response.json(deleteCard);
+}
