@@ -1,4 +1,4 @@
-export const card = [
+export const cards = [
   {
     id: 1,
     title: "Carte 1",
